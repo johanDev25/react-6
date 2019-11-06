@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Welcome from './Welcome';
 import './App.css';
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
     return (
       <div>
         {this.state.names.map((name) =>
-          <Welcome name={name} />
+          <Welcome key={name} name={name} />
         )}
       </div>
     );
